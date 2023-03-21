@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+            <p>Full Stack Developer And Hacker</p>
+            <h1>Hi im <span>Onix Lumumba</span> <br>Kenyan TechGuy</h1>
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Ray2.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am an information technologist who is flexible and with the excellent analytical skills to drive change in the IT arena. I am quick to learn new skills. I am looking for internship opportunities to help sharpen the skills gained and learn more about the information technology industry.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Ethical-hacking</span><br>Consulting on organizations vulnerability</li>
+                            <li><span>Python programmer</span><br>Implementation of python products</li>
+                            <li><span>Full-stack Developer</span><br>Building both android and websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Hacking</span><br>Consulting on organizations vulnerability and also good certification obtained online and on udemy platforms</li>
+                            <li><span>Python programmer</span><br>Working with flask and other pythen framework in the coding and development process</li>
+                            <li><span>Full-stack Developer</span><br>Building both android and websites mostly docked in my github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-Present</span><br>Barchelors in Information Technology at JKUAT</li>
+                            <li><span>2016-2018</span><br>Diploma In Computer Science at Kisumu Polytechnic</li>
+                            <li><span>Full-stack Developer</span><br>Building both android and websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+        }
+    </script>
+    
+</body>
+</html>
