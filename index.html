@@ -68,6 +68,33 @@
             </div>
         </div>
     </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Ethical-hacking</h2>
+                    <p>By virtues of studyng in udemy and other hacking platforms like try hackme i can say
+                         that i am conversant with emerging technologies hence can check for vulnerabilities within various systems</p>
+                         <a href="#">learn-more</a>
+                </div>
+                <div>
+                    <h2>Python programmer</h2>
+                    <p>By virtues of studyng in udemy and other hacking platforms like try hackme i can say
+                         that i am conversant with emerging technologies hence can check for vulnerabilities within various systems</p>
+                         <a href="#">learn-more</a>
+                </div>
+                <div>
+                    <h2>Full-stack Developer</h2>
+                    <p>By virtues of studyng in udemy and other hacking platforms like try hackme i can say
+                         that i am conversant with emerging technologies hence can check for vulnerabilities within various systems</p>
+                         <a href="#">learn-more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -80,6 +107,8 @@
             for(tabcontent of tabcontents){
                 tabcontent.classlist.remove("active-tab");
             }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
     
